@@ -1,0 +1,28 @@
+.contacts__list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+
+    padding: 30px 0;
+    transition: color var(--animation);
+
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color-blue);
+    fill: var(--accent-color-blue);
+ }
+
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+}

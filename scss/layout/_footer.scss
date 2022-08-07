@@ -1,0 +1,32 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--secondary-bg-color);
+
+    &__logo {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      color: var(--primary-write-color);
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      font-weight: 700;
+      line-height: calc(16 / 14);
+      text-transform: uppercase;
+      color: var(--primary-write-color);
+    }
+
+    &__container {
+      display: flex;
+      align-items: baseline;
+      gap: 70px;
+    }
+}

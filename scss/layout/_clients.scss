@@ -1,0 +1,21 @@
+.clients__item {
+    --item: 6;
+}
+
+.clients__link {
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    bottom: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icon-color);
+    transition: fill var(--animation), border var(--animation);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color-blue);
+      border: 1px solid #2196F3;
+   }
+}

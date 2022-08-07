@@ -2,7 +2,7 @@
 html {                                
     box-sizing: border-box;
 }
-
+/*
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -38,14 +38,6 @@ body {
     align-content: center;
 }
 
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-    color: currentColor;
-}
 
 h1,
 h2,
@@ -61,6 +53,46 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+*/
+/*Скрытие заголовков
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.card-item {
+    flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
   
@@ -70,30 +102,13 @@ img {
     padding-right: 15px;
    }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .header {
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: calc(16 / 14);
     border-bottom: 1px solid var(--header-color);
 }
-/*Скрытие заголовков*/
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -107,21 +122,8 @@ img {
 
 /*Header-begin*/
 
-/*Site nav*/
+/*Site nav
 
-.logo {
-    color: var(--accent-color-blue);
-
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    
-}
-
-.logo--studio-black {
-    color: var(--secondary-bg-color)
-}
 
 .navigate__list {
     display: flex;
@@ -162,6 +164,20 @@ img {
     border-radius: 2px;
 }   
 
+.logo {
+    color: var(--accent-color-blue);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+
+}
+
+.logo--studio-black {
+    color: var(--secondary-bg-color)
+}
+
 .contacts__list {
     display: flex;
     gap: 50px;
@@ -192,8 +208,7 @@ img {
 
 
 
-/*Header-end*/
-/*Main*/
+Main
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -223,10 +238,11 @@ img {
     text-transform: uppercase;
     
 }
+*/
 .order {
     color: var(--primary-write-color);
 }
-
+/*
 .button {
     display: flex;
     align-items: center;
@@ -253,7 +269,7 @@ img {
     background-color: var(--accent-color-blue-button);
 }
 
-
+/*
 .section-title {
     margin-bottom: 50px;
 
@@ -262,6 +278,14 @@ img {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+*/
+
+/*Преимущества*/
+
+
+/*.features-item {
+    flex-basis: calc((100% - 90px) / 4);
 }
 .features__title {
     margin-bottom: 10px;
@@ -273,22 +297,6 @@ img {
     text-transform: uppercase;
 }
 
-/*Преимущества*/
-
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--gap);
-}
-
-/*.features-item {
-    flex-basis: calc((100% - 90px) / 4);
-}*/
-
-.card-item {
-    flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
-}
-
 .features__logo {
     display: flex;
     justify-content: center;
@@ -298,14 +306,8 @@ img {
     margin-bottom: 30px;
 
 }
-.work {
-    padding-top: 0;
-}
 
 
-.works__list {
-}
-  
 .work__item {
     position: relative;
     --item: 3;
@@ -320,7 +322,7 @@ img {
     color: var(--primary-write-color);
 }
 
-/* Преимущества Overlay */
+ Преимущества Overlay 
 .work__overlay {
     position: absolute;
     bottom: 0;
@@ -332,15 +334,13 @@ img {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* Сотрудники*/
+ Сотрудники
 
 .emploees {
     background-color: var(--button-bg-color);
 }
 
-.emploees__list {
-   
-}
+
 .emploees__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -369,14 +369,11 @@ img {
     font-size: 16px;
     line-height: calc(19 / 16);
 }
+
 .networks__list {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-.social-networks {
-    
 }
 
 .networks__icon {
@@ -405,8 +402,8 @@ img {
 .networks__link:focus .networks__icon  {
     fill: var(--primary-write-color);
 }
-
-/* Постоянные клиенты */
+*/
+/* Постоянные клиенты 
 
 .clients__item {
     --item: 6;
@@ -555,8 +552,7 @@ img {
     background-color: var(--accent-color-blue);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-
-/*Футер*/
+/*Футер
 .footer {
 
     padding-top: 60px;
@@ -612,6 +608,7 @@ img {
     background-color: var(--accent-color-blue);
 }
 
+
 .address__list {
     font-style: normal;
 }
@@ -622,6 +619,7 @@ img {
 .address__link {
     color: var(--footer-text-color);
     transition: color var(--animation);
+    
 }
 
 .address__link:hover,
@@ -639,25 +637,8 @@ img {
 .address__link-white:focus {
     color: var(--accent-color-blue);
 }
-/* Пример*/
-.address__link {
-    transition: color var(--animation);
-}
+*/
 
-.address__link:hover,
-.address__link:focus {
-    color: var(--accent-color-blue);
-}
-
-.address__link--grey {
-    color: var(--footer-text-color);
-    transition: color var(--animation);
-}
-
-.address__link--grey:hover,
-.address__link--grey:focus {
-    color: var(--accent-color-blue);
-}
 
 
 
@@ -728,7 +709,7 @@ img {
     border-color: var(--accent-color-blue);
     fill: var(--accent-color-blue);
 }
-
+/*
 .register-form {
     text-align: center;
 }
@@ -874,6 +855,7 @@ img {
 .register-checkbox__link {
     color: var(--accent-color-blue);
 }
+
 .footer-form {
     display: flex;
     gap: 12px;
@@ -908,7 +890,7 @@ img {
     fill: var(--primary-write-color);
     margin-left: 10px;
 }
-
+*/
 /*вторичный цвет текста background: #212121;*/
 /*цвет основного текста background: #757575;*/
 /*цвет текста заголовка h1 и кнопки background: #FFFFFF;*/
@@ -918,4 +900,14 @@ img {
 /*цвет фона карточек сотрудников и футера  background: #FFFFFF;*/
 /* цвет фона  background: #E5E5E5;*/
 /* цвет фона background: #F5F4FA;*/
-/* цвет фона hero и футера background: #2F303A;*/
+/* цвет фона hero и футера background: #2F303A;
+Retina  экрана
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-moz-min-device-pixel-ratio: 2),
+screen and (-o-min-device-pixel-ratio: 2/1),
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    @content;
+}
+*/

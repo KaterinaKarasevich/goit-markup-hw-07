@@ -1,0 +1,25 @@
+.work__item {
+    position: relative;
+    --item: 3;
+}
+
+.work__text {
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-write-color);
+}
+
+
+.work__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px;
+    text-align: center;
+    color: var(--primary-write-color);
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
