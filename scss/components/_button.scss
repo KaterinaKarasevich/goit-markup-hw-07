@@ -17,9 +17,8 @@
     transition: background-color var(--animation);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color-blue-button);
-  }
-
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color-blue-button);
+    }
 }

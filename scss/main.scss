@@ -1,18 +1,21 @@
 //utils styles
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/placeholder";
+@import "./utils/mixin";
+
 
 //base styles
 @import "./base/base";
 @import "./base/reset";
+@import "./base/card-set";
+//@import "./base/section";
+@import "./base/container";
 
 //components styles
 
-@import "./components/card-set";
-@import "./components/section";
-@import "./components/container";
+
 @import "./components/navigate";
-@import "./components/titles";
 @import "./components/button";
 @import "./components/logo";
 @import "./components/modal-form";
@@ -20,6 +23,8 @@
 @import "./components/networks";
 @import "./components/footer-form";
 @import "./components/address";
+@import "./components/modal";
+@import "./components/backdrop";
 
 
 //layout styles
@@ -30,3 +35,5 @@
 @import "./layout/emploees";
 @import "./layout/clients";
 @import "./layout/footer";
+@import "./layout/portfolio";
+

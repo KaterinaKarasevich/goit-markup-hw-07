@@ -1,8 +1,11 @@
-.clients__item {
-    --item: 6;
-}
+.clients {
+  @extend %section;
 
-.clients__link {
+  &__item {
+    --item: 6;
+  }
+
+  &__link {
     height: 92px;
     border: 1px solid #AFB1B8;
     bottom: 4px;
@@ -17,5 +20,6 @@
     &:focus {
       fill: var(--accent-color-blue);
       border: 1px solid #2196F3;
-   }
+    }
+  }
 }

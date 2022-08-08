@@ -10,3 +10,19 @@ body {
     letter-spacing: 0.03em;
     align-content: center;
 }
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.backdrop--is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}

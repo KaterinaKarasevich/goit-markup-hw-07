@@ -2,9 +2,7 @@
     display: flex;
     gap: 12px;
 
-
   &__input {
-
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: color var(--secondary-bg-color);
@@ -13,17 +11,16 @@
     font-size: 16px;
     line-height: calc(20 / 16);
     color: var(--primary-write-color);
-
     outline: transparent;
 
     &:hover,
     &:focus {
-    border-color: var(--accent-color-blue);
+      border-color: var(--accent-color-blue);
     }
     &::placeholder {
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 

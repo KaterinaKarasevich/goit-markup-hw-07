@@ -1,10 +1,11 @@
-.networks__list {
+.networks {
+  &__list {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
+  }
 
-.networks__icon {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: var(--icon-color);
@@ -13,10 +14,13 @@
     &--color {
     fill: var(--primary-write-color);
     }
+    .networks__link:hover &,
+    .networks__link:focus & {
+      fill: var(--primary-write-color);
+    }
+  }
 
-}
-
-.networks__link {
+  &__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -25,22 +29,18 @@
     align-items: center;
     transition: background-color var(--animation);
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color-blue);
-  }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color-blue);
+    }
 
-  &:hover .networks__icon,
-  &:focus .networks__icon {
-    fill: var(--primary-write-color);
-  }
+    &--color {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
 
-  &--color {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  &--color:hover,
-  &--color:focus {
-    background-color: var(--accent-color-blue);
+    &--color:hover,
+    &--color:focus {
+      background-color: var(--accent-color-blue);
+    }
   }
 }

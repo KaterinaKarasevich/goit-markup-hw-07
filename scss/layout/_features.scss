@@ -1,4 +1,7 @@
-.features__title {
+.features {
+  @extend %section;
+
+  &__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -6,14 +9,14 @@
     line-height: calc(16 / 14);
     color: var(--title-text-color);
     text-transform: uppercase;
-}
+  }
 
-.features__logo {
+  &__logo {
     display: flex;
     justify-content: center;
     padding: 25px 100px;
     border-radius: 4px;
     background-color: var(--button-bg-color);
     margin-bottom: 30px;
-
+  }
 }

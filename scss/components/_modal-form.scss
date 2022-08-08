@@ -1,7 +1,5 @@
 .register-form {
     text-align: center;
-
-
   &__title {
     display: block;
     margin-bottom: 12px;
@@ -52,7 +50,7 @@
     transition: border-color var(--animation);
     &:focus,
     &:hover {
-    border-color: var(--accent-color-blue);
+      border-color: var(--accent-color-blue);
     }
   }
   &__message {
@@ -70,10 +68,10 @@
     resize: none;
 
     &::placeholder {
-    line-height: calc(16 / 14);
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    }
+      line-height: calc(16 / 14);
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      }
     &:focus,
     &:hover {
     border-color: var(--accent-color-blue);
@@ -92,7 +90,6 @@
       fill: var(--accent-color-blue);
     }
   }
-
 }
 
 .register-checkbox {
@@ -102,40 +99,39 @@
     align-items: center;
     margin-bottom: 30px;
     cursor: pointer;
-}
 
-.register-checkbox__input:checked+.register-checkbox-icon .register-checkbox-icon-uncheck {
-    opacity: 0;
-    transition: opacity var(--animation);
-}
+    &__text {
+      user-select: none;
+      text-underline-position: under;
+    }
 
-.register-checkbox__input:checked+.register-checkbox-icon .register-checkbox-icon-check {
-    opacity: 1;
+    &__link {
+      color: var(--accent-color-blue);
+    }
 }
 
 .register-checkbox-icon-check {
     opacity: 0;
     transition: opacity var(--animation);
+
+    .register-checkbox__input:checked+.register-checkbox-icon & {
+      opacity: 1;
+    }
 }
 
 .register-checkbox-icon-uncheck {
     transition: fill var(--animation);
-}
 
-.register-checkbox__input:hover+.register-checkbox-icon .register-checkbox-icon-uncheck {
-    fill: var(--accent-color-blue);
-}
+    .register-checkbox__input:checked+.register-checkbox-icon & {
+        opacity: 0;
+        transition: opacity var(--animation);
+    }
 
-.register-checkbox__input:focus+.register-checkbox-icon .register-checkbox-icon-uncheck {
-    fill: var(--accent-color-blue);
-}
+    .register-checkbox__input:hover+.register-checkbox-icon & {
+        fill: var(--accent-color-blue);
+    }
 
-
-.register-checkbox__text {
-    user-select: none;
-    text-underline-position: under;
-}
-
-.register-checkbox__link {
-    color: var(--accent-color-blue);
+    .register-checkbox__input:focus+.register-checkbox-icon & {
+      fill: var(--accent-color-blue);
+    }
 }
