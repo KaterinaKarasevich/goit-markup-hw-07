@@ -2,7 +2,7 @@
 html {                                
     box-sizing: border-box;
 }
-/*
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -24,7 +24,7 @@ html {
     --item: 4;
 
 }
-
+/*
 body {
     
     background-color: var(--primary-write-color);
@@ -456,15 +456,15 @@ Main
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__link:hover .portfolio__overlay,
-.portfolio__link:focus .portfolio__overlay {
+.portfolio__link:hover .portfolio-overlay,
+.portfolio__link:focus .portfolio-overlay {
     transform: translateY(0);
 }
 .portfolio__picture {
     position: relative;
     overflow: hidden;
 }
-.portfolio__overlay {
+.portfolio-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -478,7 +478,7 @@ Main
 
     transition: transform var(--animation);
 }
-.portfolio__overlay-text {
+.portfolio-overlay__text {
     
     font-size: 18px;
     line-height: 28px;
