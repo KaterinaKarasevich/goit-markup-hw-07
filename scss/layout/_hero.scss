@@ -8,7 +8,7 @@
 
     background-color: var(--hero-backgraund-color, #C4C4C4);
     background-image: linear-gradient(to right, var(--hero-gradient, #2F303A66), var(--hero-gradient, #2F303A66)),
-        url(../images/hero-background-img.jpg);
+            url(../images/hero-background-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,7 +23,7 @@
     line-height: calc(60 / 44);
     font-weight: 900;
     letter-spacing: 0.06em;
-    color: var(--primary-write-color);
+    color: #FFFFFF;
     text-transform: uppercase;
 
 }

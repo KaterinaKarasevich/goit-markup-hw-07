@@ -9,12 +9,12 @@
     display: flex;
     align-items: center;
     padding: 30px 0;
-    transition: color var(--animation);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      color: var(--accent-color-blue);
-      fill: var(--accent-color-blue);
+      color: #2196F3;
+      fill: #2196F3;
     }
   }
 

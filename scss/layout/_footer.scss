@@ -1,7 +1,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--secondary-bg-color);
+    background-color: #2F303A;
 
     &__logo {
       display: inline-block;
@@ -9,7 +9,7 @@
     }
 
     &__item {
-      color: var(--primary-write-color);
+      color: #FFFFFF;
       &:last-child {
         margin-left: auto;
       }
@@ -21,7 +21,7 @@
       font-weight: 700;
       line-height: calc(16 / 14);
       text-transform: uppercase;
-      color: var(--primary-write-color);
+      color: #FFFFFF;
     }
 
     &__container {
