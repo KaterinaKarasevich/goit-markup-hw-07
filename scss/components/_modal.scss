@@ -10,12 +10,8 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   transition: transform var(--animation);
-
-  .backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(0) rotate(180deg);
-  }
-
-  &__button {
+}
+ .modal__button {
     position: fixed;
     top: 8px;
     right: 8px;
@@ -31,11 +27,14 @@
     fill: rgba(0, 0, 0, 1);
     transition: fill var(--animation), border-color var(--animation);
     cursor: pointer;
+   
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color-blue);
+      fill: var(--accent-color-blue);
   }
+ }
 
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color-blue);
-    fill: var(--accent-color-blue);
-  }
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(180deg);
 }

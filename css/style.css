@@ -2,7 +2,7 @@
 html {                                
     box-sizing: border-box;
 }
-
+/*
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -24,7 +24,7 @@ html {
     --item: 4;
 
 }
-/*
+
 body {
     
     background-color: var(--primary-write-color);
@@ -652,7 +652,7 @@ Main
     transition: opacity var(--animation), visibility var(--animation);
 }
 
-.backdrop--is-hidden {
+.backdrop .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -672,10 +672,10 @@ Main
     border-radius: 4px;
     transition: transform var(--animation);
 }
- .backdrop--is-hidden .modal{
-    transform: translate(-50%, -50%) scale(0) rotate(180deg);
-}
 
+ .backdrop.is-hidden .modal {
+     transform: translate(-50%, -50%) scale(0) rotate(180deg);
+ }
 
 .modal__button {
     position: fixed;

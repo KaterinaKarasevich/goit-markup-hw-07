@@ -114,7 +114,7 @@
     opacity: 0;
     transition: opacity var(--animation);
 
-    .register-checkbox__input:checked+.register-checkbox-icon & {
+    .register-checkbox__input:checked + .register-checkbox-icon & {
       opacity: 1;
     }
 }
@@ -122,16 +122,16 @@
 .register-checkbox-icon-uncheck {
     transition: fill var(--animation);
 
-    .register-checkbox__input:checked+.register-checkbox-icon & {
+    .register-checkbox__input:checked + .register-checkbox-icon & {
         opacity: 0;
         transition: opacity var(--animation);
     }
 
-    .register-checkbox__input:hover+.register-checkbox-icon & {
+    .register-checkbox__input:hover + .register-checkbox-icon & {
         fill: var(--accent-color-blue);
     }
 
-    .register-checkbox__input:focus+.register-checkbox-icon & {
+    .register-checkbox__input:focus + .register-checkbox-icon & {
       fill: var(--accent-color-blue);
     }
 }

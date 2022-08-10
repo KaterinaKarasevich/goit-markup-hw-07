@@ -43,7 +43,7 @@ body {
   color: currentColor;
 }
 
-.backdrop--is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -513,10 +513,7 @@ img {
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
 }
-.backdrop--is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0) rotate(180deg);
-          transform: translate(-50%, -50%) scale(0) rotate(180deg);
-}
+
 .modal__button {
   position: fixed;
   top: 8px;
@@ -539,9 +536,14 @@ img {
   transition: fill var(--animation), border-color var(--animation);
   cursor: pointer;
 }
-.modal:hover, .modal:focus {
+.modal__button:hover, .modal__button:focus {
   border-color: var(--accent-color-blue);
   fill: var(--accent-color-blue);
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0) rotate(180deg);
+          transform: translate(-50%, -50%) scale(0) rotate(180deg);
 }
 
 .backdrop {
